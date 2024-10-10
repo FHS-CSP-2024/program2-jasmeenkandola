@@ -49,8 +49,9 @@
 ## Problem 1 ##
 #Please write a script that: 
 # - Asks for the user's name and then prints it twice, on two consecutive lines.
-
-
+name = input("What is your name? ")
+print(name)
+print(name)
 
 
 
@@ -59,6 +60,9 @@
 # - Asks for the user's name
 # - Prints it out twice on a single line so that there is an exclamation mark at the beginning of the line, 
 # - another between the two names and a third one at the end of the line.
+name = input("What is your name?")
+print(f"!{name}!{name}!")
+
 
 
 ## Problem 3 ##
@@ -70,11 +74,27 @@
 #   - Last name: Sanders
 #   - Street address: 91 Station Road
 #   - City and postal code: Folsom CA, 95630
+first_name = input("First name: ")
+last_name = input("Last name: ")
+street_address = input("Street address: ")
+city_postal_code = input("City and postal code: ")
+print(f"First name: {first_name}")
+print(f"Last name: {last_name}")
+print(f"Street address: {street_address}")
+print(f"City and postal code: {city_postal_code}")
+
+
 
 ## Problem 4 ##
 #Please write a script that: 
 # - Asks for 3 words 
 # - Puts the words together with dashes and prints that out
+word1 = input("Enter the first word: ")
+word2 = input("Enter the second word: ")
+word3 = input("Enter the third word: ")
+
+print(f"{word1}-{word2}-{word3}")
+
 
 
 ## Problem 5 ##
@@ -88,3 +108,7 @@
 #Mary is a valiant knight, born in the year 1572. 
 #One morning Mary woke up to an awful racket: a dragon was approaching the village. 
 #Only Mary could save the village's residents.
+name = input("What is your name? ")
+year = input("Enter a year: ")
+
+print(f"In the year {year}, {name} embarked on an adventure that would change their life forever! They had previously struggled a lot. But this adventure turned everything upside down.")
